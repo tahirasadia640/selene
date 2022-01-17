@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Room - Selene</title>
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Prata&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.datepick.css"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Css Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="topTopPoint">
+
+    <a id="close_mobile_menu" href="javascript:;"></a>
+    <div class="mobile_menu_wrapper">
+        <div class="mobile_menu_content">
+            <div class="menu-main-menu-container">
+                <ul id="mobile_main_menu" class="mobile_main_nav">
+                    <li>
+                        <a href="#">Startseite</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Zimmer &amp; Suiten</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Zimmer</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Einzelzimmer</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Doppelzimmer</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Dreibettzimmer</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Suiten</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Junior
+                                            Suite</a>
+                                    </li>
+                                    <li>
+                                        <a  href="#">Junior
+                                            Suite Meerblick</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Suite</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Angebote &amp;
+                            Arrangements</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Zimmerangebote</a>
+                            </li>
+                            <li><a href="#">Wellness
+                                    Angebote</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Restaurant</a>
+                         <ul class="sub-menu">
+                            <li><a href="#">Menüs</a></li>
+                            <li><a href="#">Speisekarte</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Spa</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Über uns</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+                <div id="submenu_container">
+                    <a href="#" class="close-sidebar-submenu">
+                        <i class="fa fa-angle-left"></i> BACK
+                    </a>
+                    <div class="slide-in-menu"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main" id="wrapper">
+        <div class="wrapper-inner">
+
+            <!-- Header Section -->
+            <header class="main-header">
+                <div class="custom-container">
+                    <nav class="navbar navbar-expand-lg p-0">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/images/logo_white@2x.png" class="white" alt="Brand Logo">
+                            <img src="assets/images/logo-black.png" class="black" alt="Brand Logo">
+                        </a>
+                        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button> -->
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a href="#">Startseite</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Zimmer & Suiten
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li class="second-level-dropdown">
+                                            <a class="dropdown-item" href="#">
+                                                <span>Action</span>
+                                            </a>
+                                            <div class="second-level-menu">
+                                                <a class="dropdown-item" href="#"><span>Action</span></a>
+                                                <a class="dropdown-item" href="#"><span>Another action</span></a>
+                                            </div>
+                                        </li>
+                                        <li class="second-level-dropdown">
+                                            <a class="dropdown-item" href="#"><span>Another action</span></a>
+                                            <div class="second-level-menu">
+                                                <a class="dropdown-item" href="#"><span>Action</span></a>
+                                                <a class="dropdown-item" href="#"><span>Another action</span></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Angebote & Arrangements
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li class="second-level-dropdown">
+                                            <a class="dropdown-item" href="#">
+                                                <span>Action</span>
+                                            </a>
+                                            <div class="second-level-menu">
+                                                <a class="dropdown-item" href="#"><span>Action</span></a>
+                                                <a class="dropdown-item" href="#"><span>Another action</span></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"><span>Another action</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Restaurant
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#"><span>Action</span></a>
+                                        <a class="dropdown-item" href="#"><span>Another action</span></a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Spa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Galerie</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">News</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Über uns</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Kontakt</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-icon">
+                            <a href="#"><i class="fa fa-bars toggle-icon"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <!-- Single Room Hero Section -->
+            <secion class="single-room-hero-section" style="background: url('assets/images/einzelzimmer1.jpg') no-repeat; background-size: cover;">
+                <div class="content">
+                    <h1>
+                        <span>Einzelzimmer</span> <br>
+                        Lorem ipsum dolor sit amet
+                    </h1>
+                </div>
+            </secion>
+
+            <!-- Single Room Highlighting Features -->
+            <section class="single-room-highlighting-features">
+                <div class="features-inner">
+                    <div class="box">
+                        <h5 data-aos="fade-left" data-aos-duration="1200">Doppelbett</h5>
+                    </div>
+                    <div class="box">
+                        <h5 data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">30m²</h5>
+                    </div>
+                    <div class="box">
+                        <h5 data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">kostenfreies Wifi</h5>
+                    </div>
+                    <div class="box">
+                        <h5 data-aos="fade-left" data-aos-duration="1200" data-aos-delay="600">2 Personen</h5>
+                    </div>
+                    <div class="box">
+                        <h5 data-aos="fade-left" data-aos-duration="1200" data-aos-delay="800">Ab 99€</h5>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Single Room First Section -->
+            <section class="single-room-sec-1 p-sec">
+                <div class="custom-container">
+                    <div class="sec-inner">
+                        <div class="img-box">
+                            <img src="assets/images/room-1.jpg" alt="" />
+                        </div>
+                        <div class="content-box">
+                            <h2 data-aos="fade-up" data-aos-duration="1200">Luxus & Komfort</h2>
+                            <h2 class="font-accent" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">Ein Aufenthalt
+                                der besonderen Art</h2>
+                            <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                                Nullam erat felis, pellentesque non egestas nec, vulputate id odio. Donec mattis nec orci ut porta. Donec pharetra convallis augue in tincidunt. Nullam eget felis urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent tincidunt massa porta odio euismod, sit amet 
+                            </p>
+                            <div class="action-box">
+                                <a href="#" class="theme-button " data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                                    Book this room
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Single Room Slider 2 -->
+            <section class="single-room-slider-2">
+                <div class="carousel">
+                    <div class="owl-carousel">
+                      <div class="item">
+                        <div class="bg-image" style="background-image:url('assets/images/einzelzimmer1.jpg');"></div>
+                      </div>
+                      <div class="item">
+                        <div class="bg-image" style="background-image:url('assets/images/einzelzimmer2.jpg');"></div>
+                      </div>
+                      <div class="item">
+                        <div class="bg-image" style="background-image:url('assets/images/einzelzimmer3.jpg');"></div>
+                      </div>
+                    </div>
+                </div>                  
+            </section>
+
+            <!-- Single Room Second Section -->
+            <section class="single-room-sec-2 p-sec">
+                <div class="custom-container">
+                    <div class="sec-inner">
+                        <div class="left-column">
+                            <div class="content-box">
+                                <h3 data-aos="fade-up" data-aos-duration="1200">
+                                    Room features
+                                </h3>
+                                <ul data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                                    <li>
+                                        40-inch Samsung® LED TV
+                                    </li>
+                                    <li>
+                                        Electronic safe with charging facility
+                                    </li>
+                                    <li>
+                                        iHome™ Bluetooth MP3 Player
+                                    </li>
+                                    <li>
+                                        Bügeleisen & Bügelbrett
+                                    </li>
+                                    <li>
+                                        Mini bar
+                                    </li>
+                                    <li>
+                                        Nichtraucherzimmer
+                                    </li>
+                                    <li>
+                                        USB Ladestation
+                                    </li>
+                                    <li>
+                                        kostenfreies Wifi
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/room-1200x900-1.jpg" alt="" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400" />
+                            </div>
+                        </div>
+                        <div class="right-column">
+                            <div class="img-box">
+                                <img src="assets/images/bar_and_restaurant.jpg" alt="" data-aos="fade-up" data-aos-duration="1200" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fixed Background -->
+            <section class="fixed-section">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="fixed-background">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Single Room Booking Section -->
+            <section class="booking-form-section p-sec">
+                <div class="custom-container">
+                    <div class="booking-section-inner">
+                        <div class="booking-calender-box">
+                            <h2 data-aos="fade-up" data-aos-duration="1200">Ready to book?</h2>
+                            <h2 class="accent-font" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">When would you like to stay?</h2>
+                            <div class="calender-container">
+                                <div class="booking-availability-calender" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="500"></div>
+                            </div>
+                        </div>
+                        <div class="booking-form-box">
+                            <div class="booking-card" data-aos="fade-left" data-aos-duration="1200">
+                                <div class="header">
+                                    Book Now
+                                </div>
+                                <div class="booking-form">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Check-in Date <span title="Format as dd/mm/yyyy">*</span></label>
+                                            <input type="text" id="checkinDate" class="booking-input" required autocomplete="off" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Check-out Date <span title="Formatted as dd/mm/yyyy">*</span></label>
+                                            <input type="text" id="checkoutDate" class="booking-input" required autocomplete="off" />
+                                        </div>
+                                        <div class="form-group select-box">
+                                            <div class="form-row">
+                                                <div class="col-6">
+                                                    <label>Adults</label>
+                                                    <select required autocomplete="off">
+                                                        <option value="1" selected>1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label>Children</label>
+                                                    <select required autocomplete="off">
+                                                        <option value="0" selected>0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="theme-button dark">Check Availability</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Zimmer Section -->
+            <section class="zimmer-section">
+                <!-- <div class="fixed-text">
+                    <h2>Unsere Zimmer</h2>
+                </div> -->
+                <div class="zimmer-container">
+                    <header class="c-header c-header--archive c-header--project-list">
+                        <div class="c-mouse-vertical-carousel js-carousel u-media-wrapper u-media-wrapper--16-9">
+                            <ul class="c-mouse-vertical-carousel__list js-carousel-list">
+                                <li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="0">
+                                    <a href="">
+                                        <p class="c-mouse-vertical-carousel__eyebrow u-b4">
+                                            <span>
+                                                Ab 99€ pro Nacht
+                                            </span>
+                                        </p>
+
+                                        <p class="c-mouse-vertical-carousel__title u-a5">
+                                            Einzelzimmer
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="1">
+                                    <a href="">
+                                        <p class="c-mouse-vertical-carousel__eyebrow u-b4">
+                                            <span>
+                                                Ab 109€ pro Nacht
+                                            </span>
+                                        </p>
+
+                                        <p class="c-mouse-vertical-carousel__title u-a5">
+                                            Doppelzimmer
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="2">
+                                    <a href="">
+                                        <p class="c-mouse-vertical-carousel__eyebrow u-b4">
+                                            <span>
+                                                Ab 129€ pro Nacht
+                                            </span>
+                                        </p>
+
+                                        <p class="c-mouse-vertical-carousel__title u-a5">
+                                            Dreibettzimmer
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="3">
+                                    <a href="">
+                                        <p class="c-mouse-vertical-carousel__eyebrow u-b4">
+                                            <span>
+                                                Ab 199€ pro Nacht
+                                            </span>
+                                        </p>
+
+                                        <p class="c-mouse-vertical-carousel__title u-a5">
+                                            Junior Suite
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="4">
+                                    <a href="">
+                                        <p class="c-mouse-vertical-carousel__eyebrow u-b4">
+                                            <span>
+                                                Ab 249€ pro Nacht
+                                            </span>
+                                        </p>
+
+                                        <p class="c-mouse-vertical-carousel__title u-a5">
+                                            Junior Suite Meerblick
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="5">
+                                    <a href="">
+                                        <p class="c-mouse-vertical-carousel__eyebrow u-b4">
+                                            <span>
+                                                Ab 499€ pro Nacht
+                                            </span>
+                                        </p>
+
+                                        <p class="c-mouse-vertical-carousel__title u-a5">
+                                            Suite
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img"
+                                style="background-image: url('./assets/images/einzelzimmer1.jpg')"></i>
+                            <i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img"
+                                style="background-image: url('./assets/images/room-Doppelzimmer.jpg')"></i>
+                            <i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img"
+                                style="background-image: url('./assets/images/Dreibettzimmer1.jpg')"></i>
+                            <i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img"
+                                style="background-image: url('./assets/images/room-junior_suite.jpg')"></i>
+                            <i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img"
+                                style="background-image: url('./assets/images/room-Junior-Suite-Meerblick-1.jpg')"></i>
+                            <i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img"
+                                style="background-image: url('./assets/images/room-suite-1.jpg')"></i>
+                            <i class="c-gradient-overlay"></i>
+                        </div>
+                    </header>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div class="footer-main">
+                    <div class="custom-container footer-container">
+                        <div class="row">
+                            <div class="col-lg-3 col-6">
+                                <div class="footer-item">
+                                    <h3>Explore</h3>
+                                    <ul>
+                                        <li><a href="#">Startseite</a></li>
+                                        <li><a href="#">Zimmer & Suiten</a></li>
+                                        <li><a href="#">Über uns</a></li>
+                                        <li><a href="#">Kontakt</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="footer-item">
+                                    <h3>Social Media</h3>
+                                    <ul>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Twitter</a></li>
+                                        <li><a href="#">Instagram</a></li>
+                                        <li><a href="#">Tripadvisor</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="footer-item">
+                                    <h3>Adresse</h3>
+                                    <p>B2K Hotel </br>
+                                        Kronberger Str. 12,</br>
+                                        14193 Berlin </br>
+                                    </p>
+                                    <p><a href="#">Kontakt</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copy-right-part">
+                        <div class="custom-container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>© Copyright B2K Media</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <a id="toTop" class="smooth-scroll" href="#topTopPoint"><i class="fa fa-angle-up"></i></a>
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://rawgit.com/lmgonzalves/momentum-slider/master/dist/momentum-slider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.plugin.min.js"></script> 
+    <script type="text/javascript" src="assets/js/jquery.datepick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            var url = window.location.href;
+            if( url.indexOf('#') < 0 ) {
+                window.location.replace(url + "#");
+            } else {
+                window.location.replace(url);
+            }
+            // Booking Availability Calender
+            jQuery('.booking-availability-calender').datepick({
+                rangeSelect: true, 
+                monthsToShow: 2,
+                minDate: 0,
+                useMouseWheel: true
+            });
+
+            jQuery('.booking-input').datepick({ 
+                rangeSelect: false, 
+                monthsToShow: 2,
+                minDate: 0,
+                dateFormat: 'mm/dd/yyyy',
+                showAnim: 'show',
+                dateFormat: 'mm/dd/yyyy'
+            });
+
+        });
+    </script>
+</body>
+
+</html>
